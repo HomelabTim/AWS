@@ -13,6 +13,11 @@ In this comprehensive video, we will explore the seamless integration of five co
 - **DynamoDB:** A fully managed NoSQL database for high-availability, seamless scaling, and low-latency performance.
 - **IAM (Identity and Access Management):** Ensuring secure and controlled access to AWS resources, protecting your application and data.
 
+```{figure} /README_Pictures/services.webp
+
+**Services Used**
+```
+
 ### Unleashing the Potential of Mathematics
 While this application may seem deceptively simple, it serves as a powerful demonstration of how to seamlessly integrate core components essential for constructing robust real-world applications. This particular app takes two input numbers: a `base` and an `exponent`, and it performs a fundamental mathematical operation – exponentiation. When you click the `Calculate` button, it computes and displays the result, and behind the scenes, it also stores this valuable data in a DynamoDB table, opening up possibilities for further utilization.
 
