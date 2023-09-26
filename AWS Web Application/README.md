@@ -7,11 +7,11 @@ This GitHub repository and README.md page are based on a tutorial by Tiny Techni
 
 ## Overview of the Services and Application
 In this comprehensive video, we will explore the seamless integration of five core AWS services to construct a robust end-to-end web application from the ground up. Our journey will take us through the following essential components:
-- <font color="blue">**Amplify:**</font> Empowering developers with simplified front-end and back-end app development, including authentication, APIs, and hosting.
-- <font color="blue">**API Gateway:**</font> Creating, publishing, and managing APIs at any scale to connect your applications to various AWS services.
-- <font color="blue">**Lambda:**</font> Leveraging serverless computing to execute code in response to events, allowing for scalable and cost-effective architecture.
-- <font color="blue">**DynamoDB:**</font> A fully managed NoSQL database for high-availability, seamless scaling, and low-latency performance.
-- <font color="blue">**IAM (Identity and Access Management):**</font> Ensuring secure and controlled access to AWS resources, protecting your application and data.
+- ***Amplify:*** Empowering developers with simplified front-end and back-end app development, including authentication, APIs, and hosting.
+- ***API Gateway:*** Creating, publishing, and managing APIs at any scale to connect your applications to various AWS services.
+- **Lambda:** Leveraging serverless computing to execute code in response to events, allowing for scalable and cost-effective architecture.
+- **DynamoDB:** A fully managed NoSQL database for high-availability, seamless scaling, and low-latency performance.
+- **IAM (Identity and Access Management):** Ensuring secure and controlled access to AWS resources, protecting your application and data.
 
 ![Services Used](assets/services.webp)
 <figcaption>Services Used</figcaption>
