@@ -3,7 +3,7 @@
 ## Tutorial Credit
 This GitHub repository and README.md page are based on a tutorial by Tiny Technical Tutorials. The tutorial video that inspired this repository can be found on [Tiny Technical Tutorials YouTube Channel](https://www.youtube.com/@TinyTechnicalTutorials). Please visit the channel and consider subscribing for more great tutorials.
 
-[![Watch the video](https://img.youtube.com/vi/7m_q1ldzw0U&t=1225s/default.jpg)](https://www.youtube.com/watch?v=7m_q1ldzw0U&t=1225s)
+[![Watch the video](https://img.youtube.com/vi/7m_q1ldzw0U/maxresdefault.jpg)](https://www.youtube.com/watch?v=7m_q1ldzw0U&t=1225s)
 
 ## Introduction
 Let me tell you a story…
