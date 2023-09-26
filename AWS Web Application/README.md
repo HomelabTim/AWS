@@ -5,67 +5,81 @@ This GitHub repository and README.md page are based on a tutorial by Tiny Techni
 
 [![Watch the video](https://img.youtube.com/vi/7m_q1ldzw0U/maxresdefault.jpg)](https://www.youtube.com/watch?v=7m_q1ldzw0U&t=1225s)
 
-## Introduction
-Let me tell you a story…
-
-Hi there and welcome to the channel. Let's start off this video with a story. Once upon a time when I first started learning AWS, I learned bits and pieces of it. Some of the core services, I could find my way around the AWS console. I could do things like create a new EC2 instance or create an S3 bucket and upload something to it, and I felt like my learning was going along pretty well. But then one day, I was telling some friends about AWS and how I was learning a new way to do development, and one of them said, "Send me a link to something because I want to check out your handiwork," which made me stammer a little bit about that. Because it made me realize two things: one, I hadn't actually built anything that I could share with the outside world, and two, and more importantly, I didn't actually know how to build something because I wasn't able to put all the services together into an actual application. I knew what the puzzle pieces were, in other words, the different AWS services I had been learning about, but I wasn't able to put them together into an actual usable thing. And if you're feeling the same way, you've come to the right place.
-
 ## Overview of the Services and Application
-In this video, we'll be using five AWS services to build an end-to-end web application from scratch. And yes, you can even share it with your friends when you're done if you'd like. Let me show you the working version.
+In this comprehensive video, we will explore the seamless integration of five core AWS services to construct a robust end-to-end web application from the ground up. Our journey will take us through the following essential components:
+- **Amplify:** Empowering developers with simplified front-end and back-end app development, including authentication, APIs, and hosting.
+- **API Gateway:** Creating, publishing, and managing APIs at any scale to connect your applications to various AWS services.
+- **Lambda:** Leveraging serverless computing to execute code in response to events, allowing for scalable and cost-effective architecture.
+- **DynamoDB:** A fully managed NoSQL database for high-availability, seamless scaling, and low-latency performance.
+- **IAM (Identity and Access Management):** Ensuring secure and controlled access to AWS resources, protecting your application and data.
 
-### The Power of Math
-Now admittedly, this is a super simple application, but it ties together all of the main components that you would need to build a much larger real-world application. This just takes in two different numbers, so we have a base number (let's say 2) and then an exponent (we'll go with 5), and it's going to return the result: the base to the power of the exponent. If we click on "Calculate," the result is 32. You'll see that we get that in the popup. It's also being saved to a DynamoDB table on the backend if you wanted to do something with it down the line.
+### Unleashing the Potential of Mathematics
+While this application may seem deceptively simple, it serves as a powerful demonstration of how to seamlessly integrate core components essential for constructing robust real-world applications. This particular app takes two input numbers: a `base` and an `exponent`, and it performs a fundamental mathematical operation – exponentiation. When you click the `Calculate` button, it computes and displays the result, and behind the scenes, it also stores this valuable data in a DynamoDB table, opening up possibilities for further utilization.
+
+In essence, this seemingly straightforward application showcases the core principles and technologies that serve as the foundation for much larger and more complex real-world projects. It's a testament to the elegance and versatility of modern cloud-based solutions.
 
 ## Prerequisites
-Before you get started, here's what you'll need to follow along with this tutorial:
-- A text editor (e.g., Notepad++, Visual Studio Code, or your favorite editor).
-- An AWS account and access to the AWS console. If you don't have one already, you can set it up using the link above and below.
-- Basic knowledge of AWS. While this video won't be a deep dive into any specific AWS service, it's helpful to have some basic understanding of AWS concepts.
+Before getting started, here's what I needed to follow along with this tutorial:
+- A text editor (e.g., Notepad++, Visual Studio Code).
+- An AWS account and access to the AWS console.
+- Basic knowledge of AWS. While this video wasn't a deep dive into any specific AWS service, it's helpful to have some basic understanding of AWS concepts.
 
-## Building the Web Application
-### Creating and Hosting a Web Page
-To create and host a web page for our web application, we'll use AWS Amplify. Amplify allows us to build and host websites easily. For this tutorial, we'll create a simple HTML page and use Amplify to deploy and host it.
+## Constructing the Web Application
 
-Here's a quick overview of the steps:
-1. Create a new HTML file locally (e.g., index.html).
-2. Write the HTML code for your web page (You can find the code in this repository under `index-original.html`).
-3. Zip the HTML file.
-4. Deploy the web page using AWS Amplify.
+### Formulating and Hosting a Web Page
 
-### Doing Math Calculations
-To implement the math functionality of our web application, we'll use an AWS Lambda function. Lambda is a serverless compute service that allows you to run code in response to various triggers. In this case, we'll use it to perform mathematical calculations.
+To initiate my web application, I used AWS Amplify, a practical solution for web creation and hosting. The process encompassed these essential steps:
 
-Here's what we'll do:
-1. Create a Python Lambda function from scratch.
-2. Write Python code to perform the math calculation.
-3. Test the Lambda function to ensure it's working as expected.
+- **Local HTML Creation:** Began by crafting a local HTML file, such as index.html.
 
-### Invoking the Lambda Function
-Next, we need a way to invoke the Lambda function to perform the math calculation. We'll use Amazon API Gateway to create a RESTful API endpoint that can trigger our Lambda function.
+- **HTML Development:** Populate the HTML file with the necessary code (you can reference the code in this repository under `index-original.html`).
 
-Here's the process:
-1. Create a REST API using Amazon API Gateway.
-2. Add a POST method to the API to trigger the Lambda function.
-3. Enable CORS (Cross-Origin Resource Sharing) to allow the API to be called from our web page.
-4. Deploy the API.
+- **Zip the HTML:** Compress the HTML file into a zip archive for deployment.
 
-### Storing Results and Permissions
-To store the math results and handle permissions, we'll use Amazon DynamoDB, a NoSQL database service provided by AWS. We'll also set up the necessary permissions for our Lambda function to write data to DynamoDB.
+- **Amplify Deployment:** Utilize AWS Amplify to deploy the web page.
 
-Here's what we'll do:
-1. Create a DynamoDB table to store math results.
-2. Define an IAM (Identity and Access Management) role to grant permissions to the Lambda function.
-3. Modify the Lambda function to write results to DynamoDB.
+### Implementing Mathematical Calculations
 
-### Final Touches and Testing
-In the final steps, we'll update our web page to make API calls, handle responses, and display the results. We'll also test the entire application to ensure everything is working correctly.
+The web application's mathematical capabilities rely on AWS Lambda, a serverless computing service. Here's how I accomplished this:
 
-Here's a summary:
-1. Update the JavaScript code on our web page to call the API.
-2. Handle API responses and display the results on the web page.
-3. Test the web application by entering different numbers and checking the results.
+- **Create a Python Lambda Function:** Develop a Python-based Lambda function from scratch.
+
+- **Write Python Code:** Craft Python code to execute mathematical calculations (you can reference the code in this repository under `index-original.html`).
+
+- **Test the Lambda Function:** Ensure the Lambda function functions correctly through rigorous testing.
+
+### Triggering the Lambda Function
+
+To invoke the Lambda function for mathematical operations, I employed Amazon API Gateway, creating a RESTful API endpoint:
+
+- **Establish a REST API:** Set up a REST API using Amazon API Gateway.
+
+- **Add a POST Method:** Configure a POST method within the API to trigger the Lambda function.
+
+- **CORS Enablement:** Enable Cross-Origin Resource Sharing (CORS) to permit web page calls to the API.
+
+- **Deploy the API:** Deploy the API for full functionality.
+
+### Storing Results and Managing Permissions
+
+Amazon DynamoDB, a NoSQL database service, was chosen for storing mathematical results and permissions management:
+
+- **DynamoDB Table Creation:** Establish a DynamoDB table dedicated to storing mathematical results.
+
+- **IAM Role Definition:** Define an Identity and Access Management (IAM) role to grant the Lambda function the necessary permissions.
+
+- **Lambda-DynamoDB Integration:** Modify the Lambda function to save results in DynamoDB.
+
+## Finalizing and Testing
+
+The concluding steps revolved around enhancing the web page for API calls, response handling, and results presentation:
+
+- **JavaScript Integration:** Update the JavaScript code on the web page to initiate API calls.
+
+- **Response Handling:** Implement code for handling API responses and displaying results on the web page.
+
+- **Rigorous Testing:** Thoroughly test the web application with various inputs to ensure its functionality.
 
 ## Conclusion
-That's it! We've successfully built an end-to-end web application using AWS services. You've learned how to create a web page, implement serverless compute with Lambda, create RESTful APIs with API Gateway, and use DynamoDB for data storage. You can take this knowledge and expand it to build more complex applications on AWS.
 
-If you found this tutorial helpful, please consider giving it a star on GitHub and subscribing to my YouTube channel for more AWS tutorials and tech content. Thank you for watching, and I'll see you in the next one!
+In summary, I successfully constructed an end-to-end web application using AWS services. This journey covered web page creation with `AWS Amplify`, serverless computing via `Lambda`, RESTful APIs with `API Gateway`, and data storage in `DynamoDB`. Armed with this knowledge, I can now embark on more complex AWS projects.
