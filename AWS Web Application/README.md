@@ -13,7 +13,7 @@ In this comprehensive video, we will explore the seamless integration of five co
 - ***DynamoDB:*** A fully managed NoSQL database for high-availability, seamless scaling, and low-latency performance.
 - ***IAM (Identity and Access Management):*** Ensuring secure and controlled access to AWS resources, protecting your application and data.
 
-![Services Used](assets/services.webp)
+![Services Used](assets/services.jpg)
 <figcaption>Services Used</figcaption>
 
 ### Unleashing the Potential of Mathematics
@@ -27,7 +27,7 @@ Before getting started, here's what I needed to follow along with this tutorial:
 - An AWS account and access to the AWS console.
 - Basic knowledge of AWS. While this video wasn't a deep dive into any specific AWS service, it's helpful to have some basic understanding of AWS concepts.
 
-![What We Will Be Doing](assets/needed.webp)
+![What We Will Be Doing](assets/needed.jpg)
 <figcaption>What We Will Be Doing</figcaption>
 
 ## Constructing the Web Application
